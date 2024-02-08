@@ -8,8 +8,7 @@ int main() {
     stack[++top] = i;
 
   for (i = 0; i < 10; i++) {
-    printf("%d\n", stack[top]);
-    top--;
+    printf("%d\n", stack[top--]);
   }
   return 0;
 }
