@@ -38,9 +38,6 @@ int pop(struct Stack *stack) {
 // Function to set the size of the stack
 void setSized(struct Stack *stack, int size) {
   stack->capacity = size;
-  // if (stack->items) {
-  //   free(stack->items);
-  // }
   stack->items = (int *)malloc(stack->capacity * sizeof(int));
   if (stack->items == NULL) {
     printf("Memory allocation failed\n");
