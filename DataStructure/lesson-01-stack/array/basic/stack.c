@@ -5,10 +5,10 @@ int main() {
   int top = -1;
   int i;
   for (i = 0; i < 10; i++)
-    stack[++top] = i;
+    stack[++top] = i; // push
 
   for (i = 0; i < 10; i++) {
-    printf("%d\n", stack[top--]);
+    printf("%d\n", stack[top--]); // pop
   }
   return 0;
 }
