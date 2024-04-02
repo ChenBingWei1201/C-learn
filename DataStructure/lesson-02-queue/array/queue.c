@@ -7,7 +7,7 @@ int queue[MAX];
 int front = -1, rear = -1;
 
 void insert();
-void delete ();
+void delete();
 void display();
 
 int main() {
@@ -48,7 +48,7 @@ void insert() {
   }
 }
 
-void delete () {
+void delete() {
   if (front == -1 || front > rear) {
     printf("\nQueue is empty");
     return;
